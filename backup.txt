@@ -1,0 +1,10 @@
+pages: [
+  {
+    // optional
+    type: 'blog', // TypeName from prismic
+    match: '/blog/:uid', // pages will be generated under this pattern (optional)
+    path: '/blog', // placeholder page for unpublished documents
+    component: require.resolve('./src/templates/blog.js'),
+    sortBy: 'date_ASC', // optional, default: meta_lastPublicationDate_ASC; useful for pagination
+  },
+],

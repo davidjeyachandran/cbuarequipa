@@ -10,6 +10,16 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-material-ui',
     {
+      resolve: 'gatsby-source-prismic-graphql',
+      options: {
+        repositoryName: 'cbuarequipa', // required
+        sharpKeys: [
+          /image|photo|picture/, // (default)
+          'profilepic',
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',
