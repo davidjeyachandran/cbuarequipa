@@ -60,6 +60,7 @@
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "nouislider": "^13.1.1",
+    "prismic-javascript": "^2.2.0",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
