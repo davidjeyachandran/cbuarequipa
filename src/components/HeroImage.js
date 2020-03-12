@@ -23,7 +23,7 @@ const HeroImage = ({
   const classes = useStyles()
 
   return (
-    <Parallax image={require('assets/img/bg4.jpg')}>
+    <Parallax image={require('assets/img/cbu.jpg')}>
       <div className={classes.container}>
         <div className={classes.container}>
           <GridContainer>

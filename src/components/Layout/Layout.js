@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
                 onClick={e => e.preventDefault()}
                 color="transparent"
               >
-                About us
+                Acerca de
               </Button>
             </ListItem>
             <ListItem className={classes.listItem}>
@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
                 onClick={e => e.preventDefault()}
                 color="transparent"
               >
-                Products
+                Blog
               </Button>
             </ListItem>
             <ListItem className={classes.listItem}>
@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
                 onClick={e => e.preventDefault()}
                 color="transparent"
               >
-                Contact us
+                Contáctenos
               </Button>
             </ListItem>
           </List>
