@@ -37,6 +37,7 @@ const SectionFeatures = () => {
               </CardHeader>
               <CardBody plain>
                 <h4 className={classes.cardTitle}>Our Story</h4>
+                <p>lorem fwhw hefiuhw efiu hw efiuw efiuwhefiu</p>
               </CardBody>
             </Card>
           </GridItem>

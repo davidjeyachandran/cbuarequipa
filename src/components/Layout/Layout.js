@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       /> */}
       <Header
         fixed
-        brand="NT Schools"
+        brand="CBU Arequipa"
         color="transparent"
         changeColorOnScroll={{
           height: 400,
