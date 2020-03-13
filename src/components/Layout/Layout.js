@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { navigate, withPrefix } from 'gatsby'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -41,11 +41,9 @@ const Layout = ({ children }) => {
         links={
           <List className={`${classes.list} ${classes.mlAuto}`}>
             <ListItem className={classes.listItem}>
-              <Link to="/">Home</Link>
               <Button
-                href="/"
                 className={classes.navLink}
-                onClick={e => e.preventDefault()}
+                onClick={() => navigate(withPrefix(`/`))}
                 color="transparent"
               >
                 Home
@@ -53,9 +51,8 @@ const Layout = ({ children }) => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="/acerca-de"
                 className={classes.navLink}
-                onClick={e => e.preventDefault()}
+                onClick={() => navigate(withPrefix(`acerca-de`))}
                 color="transparent"
               >
                 Acerca de
@@ -63,9 +60,8 @@ const Layout = ({ children }) => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="/blog"
                 className={classes.navLink}
-                onClick={e => e.preventDefault()}
+                onClick={() => navigate(withPrefix(`blog`))}
                 color="transparent"
               >
                 Blog
@@ -73,9 +69,8 @@ const Layout = ({ children }) => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="/contact"
                 className={classes.navLink}
-                onClick={e => e.preventDefault()}
+                onClick={() => navigate(withPrefix(`contact`))}
                 color="transparent"
               >
                 Contáctenos

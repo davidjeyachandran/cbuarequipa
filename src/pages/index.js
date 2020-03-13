@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from 'components/Layout/index'
 import HeroImage from 'components/HeroImage'
 import SectionFeatures from 'components/IndexPage/components/SectionFeatures'
+import BodyContainer from 'components/BodyContainer'
 
 const index = () => {
   return (
@@ -13,9 +14,9 @@ const index = () => {
         textSubtitle="¿Quieres estudiar la Biblia con nosotros?"
         urlImage="assets/img/bg4.jpg"
       />
-      <h1>CBU Arequipa</h1>
-      <p>Hola</p>
-      <SectionFeatures />
+      <BodyContainer>
+        <SectionFeatures />
+      </BodyContainer>
     </Layout>
   )
 }
