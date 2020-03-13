@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -40,8 +41,9 @@ const Layout = ({ children }) => {
         links={
           <List className={`${classes.list} ${classes.mlAuto}`}>
             <ListItem className={classes.listItem}>
+              <Link to="/">Home</Link>
               <Button
-                href="#pablo"
+                href="/"
                 className={classes.navLink}
                 onClick={e => e.preventDefault()}
                 color="transparent"
@@ -51,7 +53,7 @@ const Layout = ({ children }) => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="#pablo"
+                href="/acerca-de"
                 className={classes.navLink}
                 onClick={e => e.preventDefault()}
                 color="transparent"
@@ -61,7 +63,7 @@ const Layout = ({ children }) => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="#pablo"
+                href="/blog"
                 className={classes.navLink}
                 onClick={e => e.preventDefault()}
                 color="transparent"
@@ -71,7 +73,7 @@ const Layout = ({ children }) => {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="#pablo"
+                href="/contact"
                 className={classes.navLink}
                 onClick={e => e.preventDefault()}
                 color="transparent"

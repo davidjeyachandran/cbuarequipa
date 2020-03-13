@@ -28,8 +28,10 @@ const HeroImage = ({
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>{textTitle}</h1>
-              <h2>{textSubtitle}</h2>
+              <h1 style={{ fontSize: '4em' }} className={classes.title}>
+                {textTitle}
+              </h1>
+              <h2 style={{ color: '#ccc' }}>{textSubtitle}</h2>
               <h4>{textContent}</h4>
               <br />
               {buttonText && (

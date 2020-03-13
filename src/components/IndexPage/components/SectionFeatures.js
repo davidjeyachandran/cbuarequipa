@@ -8,9 +8,9 @@ import Card from 'components/Card/Card'
 import CardHeader from 'components/Card/CardHeader'
 import CardBody from 'components/Card/CardBody'
 
-import cardProfile1 from 'assets/img/examples/card-profile1.jpg'
-import cardProfile2 from 'assets/img/examples/card-profile2.jpg'
-import cardProfile4 from 'assets/img/examples/card-profile4.jpg'
+import cardProfile1 from 'assets/img/cards/1.jpg'
+import cardProfile2 from 'assets/img/cards/2.jpg'
+import cardProfile4 from 'assets/img/cards/3.jpg'
 
 const useStyles = makeStyles(teamsStyle)
 
@@ -36,15 +36,19 @@ const SectionFeatures = () => {
                 />
               </CardHeader>
               <CardBody plain>
-                <h4 className={classes.cardTitle}>Our Story</h4>
-                <p>lorem fwhw hefiuhw efiu hw efiuw efiuwhefiu</p>
+                <h4 className={classes.cardTitle}>Quienes Somos</h4>
+                <p>
+                  Somos un grupo de Cristianos Evangélicos que busca capacitar a
+                  los estudiantes a vivir su fe y compartirla en el mundo
+                  estudiantil.
+                </p>
               </CardBody>
             </Card>
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <Card plain profile>
               <CardHeader image plain>
-                <a href="#pablo" onClick={e => e.preventDefault()}>
+                <a href="/como-participar" onClick={e => e.preventDefault()}>
                   <img src={cardProfile2} alt="..." />
                 </a>
                 <div
@@ -56,7 +60,12 @@ const SectionFeatures = () => {
                 />
               </CardHeader>
               <CardBody plain>
-                <h4 className={classes.cardTitle}>Our Schools</h4>
+                <h4 className={classes.cardTitle}>¿Como Participar?</h4>
+                <ul>
+                  <li>Si es estudiante</li>
+                  <li>Si es egresado</li>
+                  <li>Si es pastor/lider de una iglesia</li>
+                </ul>
               </CardBody>
             </Card>
           </GridItem>
@@ -75,7 +84,8 @@ const SectionFeatures = () => {
                 />
               </CardHeader>
               <CardBody plain>
-                <h4 className={classes.cardTitle}>Our Jobs</h4>
+                <h4 className={classes.cardTitle}>Blog</h4>
+                <p>Tips para la vida universitaria</p>
               </CardBody>
             </Card>
           </GridItem>
